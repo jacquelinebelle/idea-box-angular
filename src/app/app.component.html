@@ -1,3 +1,3 @@
 <h1>Idea Box</h1>
 
-<app-idea-form></app-idea-form>
+<app-idea-form [name]="name" [description]="description" (addIdea)="execOnClose($event)"></app-idea-form>

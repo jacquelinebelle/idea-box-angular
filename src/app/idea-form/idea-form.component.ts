@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
@@ -6,14 +6,24 @@ import { FormGroup, FormControl } from '@angular/forms';
   templateUrl: './idea-form.component.html',
   styleUrls: ['./idea-form.component.scss']
 })
-export class IdeaFormComponent {
+export class IdeaFormComponent implements OnInit {
 
   constructor() { }
 
+  @Input() name: string;
+  @Input() description: string;
+  @Output() addIdea = new EventEmitter();
+
   ngOnInit() {
+
   }
+  
   IdeaForm = new FormGroup({
     title: new FormControl(''),
     description: new FormControl('')
   });
+
+  onSubmit() {
+    this.addIdea.emit(this.IdeaForm.value);
+  }
 }

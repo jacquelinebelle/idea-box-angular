@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Idea Box';
+  name = '';
+  description = '';
+  ideas = [];
+
+  addIdea(idea) {
+    this.ideas = [{ id: this.ideas.length, ...idea }, ...this.ideas];
+    return this.ideas;
+  }
+
+  execOnClose($event: any) {
+    this.addIdea($event);
+  }
 }
