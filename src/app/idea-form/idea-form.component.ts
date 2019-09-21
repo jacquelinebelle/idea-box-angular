@@ -25,5 +25,6 @@ export class IdeaFormComponent implements OnInit {
 
   onSubmit() {
     this.addIdea.emit(this.IdeaForm.value);
+    this.IdeaForm.reset();
   }
 }
