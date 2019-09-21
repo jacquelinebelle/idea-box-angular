@@ -1,1 +1,12 @@
 <h1>Idea Box</h1>
+
+<app-idea-form [title]="title" [description]="description" (addIdea)="execOnClose($event)"></app-idea-form>
+
+<ul>
+    <li *ngFor="let idea of ideas">
+        <article>
+            <h2>{{idea.title}}</h2>
+            <p>{{idea.description}}</p>
+        </article>
+    </li>
+</ul>
