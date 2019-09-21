@@ -7,8 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Idea Box';
-  name = '';
-  description = '';
   ideas = [];
 
   addIdea(idea) {
@@ -19,4 +17,5 @@ export class AppComponent {
   execOnClose($event: any) {
     this.addIdea($event);
   }
+
 }

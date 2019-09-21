@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { IdeaFormComponent } from './idea-form/idea-form.component';
 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { IdeaComponent } from './idea/idea.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IdeaFormComponent
+    IdeaFormComponent,
+    IdeaComponent
   ],
   imports: [
     BrowserModule,
