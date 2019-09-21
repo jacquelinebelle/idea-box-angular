@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-idea-form',
@@ -12,7 +12,8 @@ export class IdeaFormComponent {
 
   ngOnInit() {
   }
-  title = new FormControl('');
-  description = new FormControl('');
-
+  IdeaForm = new FormGroup({
+    title: new FormControl(''),
+    description: new FormControl('')
+  });
 }
