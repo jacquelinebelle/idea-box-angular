@@ -1,0 +1,58 @@
+form {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    margin: 0 auto;
+    width: 56%;
+}
+
+label, input, textarea {
+    margin: 0 auto;
+    margin-bottom: 8px;
+    width: 72%;
+}
+
+label {
+    display: flex;
+    font-size: 32px;
+    text-align: left;
+}
+
+input, textarea {
+    border-radius: 8px;
+    font-family: 'Raleway';
+    font-size: 24px;
+    height: 40px;
+    padding: 10px;
+    width: 100%;
+}
+
+
+input {
+    height: 40px;
+}
+
+textarea {
+    height: 160px;
+}
+
+input, textarea, button {
+    border: none;
+}
+
+button {
+    background: linear-gradient(to top right, #3a3860, #5391b9);
+    border-radius: 24px;
+    color: white;
+    font-family: 'Playfair Display';
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 16px;
+    width: 16%;
+}
+
+button:hover {
+    background: linear-gradient(to top right, #cd3672, #d84fde);
+    cursor: pointer;
+}
+
