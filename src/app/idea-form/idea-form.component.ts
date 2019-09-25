@@ -19,7 +19,7 @@ export class IdeaFormComponent implements OnInit {
   }
   
   IdeaForm = new FormGroup({
-    title: new FormControl(''),
+    name: new FormControl(''),
     description: new FormControl('')
   });
 
