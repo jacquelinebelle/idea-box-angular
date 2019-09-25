@@ -50,7 +50,29 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(to top right, #cd3672, #d84fde);
+    animation: sliding 3s ease-out infinite;
+    background: linear-gradient(to top right, #3a3860, #415179, #4c7aa2, #5391b9, );
+    background-size: 300%;
     cursor: pointer;
+}
+
+@keyframes sliding {
+
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+    
+//     0%{
+//     background-position: center;
+//     }
+//    100%{
+//     background-position: top right;
+//     }
 }
 
