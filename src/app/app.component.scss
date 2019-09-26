@@ -6,3 +6,48 @@ h1 {
     text-align: center;
     word-spacing: -10px;
 }
+
+li {
+    margin: 0 16px 16px 0;
+
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 16px auto;
+    width: 90%;
+    li:nth-child(3n+3) {
+        margin-right: 0;
+    }
+ 
+}
+
+
+
+article {
+    background-color: #e0e7da;
+    color: #524974;
+    display: inline-block;
+    border-radius: 10px;
+    height: 480px;
+    width: 397px;
+    font-size: 19px;
+    letter-spacing: 1.5px;
+    line-height: 1.6rem;
+    padding: 32px;
+    margin: 0;
+    overflow: scroll;
+
+}
+
+
+h2 {
+    margin-top: 0;
+}
+
+p {
+    margin: 0;
+}
