@@ -1,15 +1,20 @@
 <form [formGroup]="IdeaForm" (ngSubmit)="onSubmit()">
 
-    <label>
-        Title:
-        <input type="text" formControlName="title">
-    </label>
+    <label for="idea-title">Title of your idea</label>
+    <input 
+        id="idea-title"
+        type="text" 
+        formControlName="name"
+        placeholder="Title">
 
-    <label>
-        Description:
-        <input type="text" formControlName="description">
-    </label>
 
-    <button type="submit">add idea!</button>
+    <label for="idea-description">Description of your idea</label>
+    <textarea 
+        id="idea-description"
+        type="text" formControlName="description"
+        placeholder="Idea description here :)"></textarea>
+
+
+    <button type="submit">submit</button>
 
 </form>

@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    color: white;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    font-family: 'Raleway';
+    padding: 16px 32px;
+    * {
+        box-sizing: border-box;
+    }
+}
